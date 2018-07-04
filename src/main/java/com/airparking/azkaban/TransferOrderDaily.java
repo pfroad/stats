@@ -17,7 +17,7 @@ public class TransferOrderDaily {
                 DBUtils.close();
                 LOGGER.info("Done to shutdown datasource.");
             } catch (Exception e) {
-                LOGGER.error("Error to run shutdown hook!", e);
+                LOGGER.error("Failed to run shutdown hook!", e);
             }
         }));
     }
